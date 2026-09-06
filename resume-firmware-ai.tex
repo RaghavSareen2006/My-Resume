@@ -1,0 +1,111 @@
+\documentclass{resume}
+
+\usepackage[left=0.5in,top=0.4in,right=0.5in,bottom=0.4in]{geometry}
+
+\name{Raghav Sareen}
+\address{(650) 660-7750 $\diamond$ Pleasanton, CA}
+\address{\href{mailto:raghavsareen2006@gmail.com}{raghavsareen2006@gmail.com} $\diamond$
+\href{https://www.linkedin.com/in/raghavsareen2006/}{linkedin.com/in/raghavsareen2006} $\diamond$
+\href{https://github.com/RaghavSareen2006}{github.com/RaghavSareen2006}}
+
+\begin{document}
+
+\begin{rSection}{Objective}
+Computer Engineering student pursuing Firmware and AI Engineering opportunities, with experience spanning embedded C/C++, STM32 motor control, edge-AI computer vision, LLM evaluation, agent testing, Linux systems, and hardware-software integration.
+\end{rSection}
+
+\begin{rSection}{Education}
+\textbf{Bachelor of Science in Computer Engineering}, San Jose State University \hfill Expected May 2028\\
+GPA: 3.776/4.000\\
+\textit{Selected Coursework:} Programming Concepts, Object-Oriented Programming, Algorithms and Data Structures, Assembly Language Programming, Electronics, Circuit Analysis, Introductory Electrical Engineering Lab, Engineering Statistics, Differential Equations and Linear Algebra
+\end{rSection}
+
+\begin{rSection}{Skills}
+\begin{tabular}{@{} >{\bfseries}l @{\hspace{2ex}} p{0.73\textwidth}}
+Programming & C, C++ \\
+Firmware \& Embedded & STM32F103, libHAL, GPIO, CAN, PWM, I\textsuperscript{2}C, PID control, BLDC motors, limit switches \\
+AI \& Computer Vision & Ultralytics YOLO, TensorRT, OpenCV, prompt engineering, LLM evaluation, agentic workflows \\
+Systems \& DevOps & NVIDIA Jetson Orin Nano, ARM64 Linux, Docker Compose, Tailscale, Git/GitHub \\
+AI \& Product Tools & OpenClaw, Claude Code, ChatGPT, Jira, Kanban, Scrum, PRDs, epics, features, user stories \\
+\end{tabular}
+\end{rSection}
+
+\begin{rSection}{Technical Experience}
+
+\textbf{Firmware Team Member, ALICANTO Rover} \hfill Sep 2024 -- May 2026\\
+SJSU Robotics \hfill \textit{San Jose, CA}
+\begin{itemize}
+    \itemsep -3pt {}
+    \item Programmed and tested C++ firmware for the ALICANTO rover arm subsystem in preparation for the 2027 University Rover Challenge; committed changes that were reviewed and merged into the shared team codebase.
+    \item Validated three STM32F103 MicroMod and motor assemblies controlling the wrist, shoulder, and elbow, verifying motor response and component behavior with libHAL.
+    \item Updated and tuned PID control functions to reduce arm jitter and improve stability during movement.
+    \item Collaborated with the firmware lead and sublead to implement arm homing for BLDC motors using one limit switch and hands-on GPIO, CAN, and PWM communication.
+\end{itemize}
+
+\textbf{AI Agent Testing Volunteer} \hfill Jun 2026\\
+Social Experiments \hfill \textit{Remote}
+\begin{itemize}
+    \itemsep -3pt {}
+    \item Designed 60 functional test cases and executed 37 functional tests plus 13 end-to-end workflow scenarios for an AI Slack agent.
+    \item Tested Jira integration, contract drafting, document ingestion, redlining, approvals, role permissions, duplicate handling, error recovery, and response-time behavior.
+    \item Built a structured test workbook containing priorities, preconditions, prompts, test steps, expected and actual results, automation candidates, and defect notes.
+    \item Identified failures or errors in 28 scenarios, including duplicate responses, long timeouts, incorrect task routing, missing attachments, and incomplete workflow transitions.
+    \item Reported results to the product team, contributing to improvements across most identified issues; used Jira and Agile practices and learned to structure PRDs with epics, features, and user stories.
+\end{itemize}
+
+\end{rSection}
+
+\newpage
+\begin{rSection}{Projects}
+
+\textbf{AI-Assisted Home Security Arm Turret} \hfill Jul 2026 -- Present\\
+\textit{NVIDIA Jetson Orin Nano, xArm, YOLO, TensorRT, OpenCV, Docker Compose, Tailscale}
+\begin{itemize}
+    \itemsep -3pt {}
+    \item Conceived and assembled a customizable home-security system by integrating a USB camera and a commercial xArm kit with a Jetson Orin Nano; configured two servo motors for pan and tilt control.
+    \item Used OpenClaw and Claude Code for AI-assisted implementation, then personally deployed, configured, troubleshot, and validated the complete hardware-software system for continuous 24/7 operation at home.
+    \item Tested person and face detection, target verification and reacquisition, automatic room scanning, dog tracking, manual hold, digital zoom, photo capture, Telegram alerts, GPIO status lights, and safe servo limits.
+    \item Deployed GPU inference and web services with Docker Compose and built private remote access through Tailscale; validated an authenticated dashboard with livestream controls and real-time telemetry.
+\end{itemize}
+
+\textbf{Jetson Home Lab and Personal AI Infrastructure} \hfill Jul 2026 -- Present\\
+\textit{Jetson Orin Nano, ARM64 Linux, OpenClaw, Docker Compose, Tailscale, Home Assistant}
+\begin{itemize}
+    \item Configured the Jetson as a multi-service home server running OpenClaw, Home Assistant, Music Assistant, Jellyfin, Portainer, and computer-vision containers.
+    \item Managed persistent volumes, host networking, container health, logs, service restarts, and private HTTPS access through Tailscale.
+    \item Diagnosed IoT connection failures, camera conflicts, container crash loops, high system load, swap pressure, and USB HID availability; configured exit-node forwarding and persistent NAT/firewall behavior.
+    \item Created a sanitized Home Assistant configuration repository with Docker Compose files, restore documentation, secret exclusions, and credential-pattern checks.
+\end{itemize}
+
+\textbf{The Efficacy of ChatGPT in Mathematics} \hfill May 2023 -- Sep 2023\\
+\textit{Polygence Research Program}
+\begin{itemize}
+    \itemsep -3pt {}
+    \item Designed and conducted an experiment evaluating ChatGPT across 107 algebra problems from a standardized textbook dataset.
+    \item Measured 81\% initial answer accuracy, compared two follow-up strategies, and analyzed failure patterns involving graphs, rational expressions, and mathematical formatting.
+    \item Evaluated LaTeX formatting and math-teacher role prompting as mitigation strategies; authored a research paper and presentation with guidance from a research mentor.
+    \item Won Top Asynchronous Pitch among more than 300 presentations at the Polygence Symposium of Rising Scholars.
+\end{itemize}
+
+\end{rSection}
+
+\begin{rSection}{Leadership \& Activities}
+
+\textbf{Social Media Coordinator, Indian Students Organization} \hfill Aug 2025 -- Present\\
+Created two promotional reels, participated in four to five event videos, attended weekly planning meetings, and supported promotion and event operations for a program that sold 75 tickets.
+
+\textbf{Program Member, MESA Engineering Program} \hfill Sep 2024 -- Present\\
+Volunteered 12+ hours as an event floater for Science Extravaganza, supporting hands-on STEM workshops serving more than 350 middle-school students.
+
+\end{rSection}
+
+\begin{rSection}{Awards \& Certifications}
+\textbf{Awards:} 2026 President's Scholar, San Jose State University; Top Asynchronous Pitch, Polygence Symposium of Rising Scholars; AP Scholar; California State Seal of Biliteracy\\
+\textbf{Certifications:} Command Line in Linux and Getting Started with Linux Terminal (Coursera, 2026); Learn Git and GitHub in One Day (Udemy, 2026); Claude Code in Action (Anthropic, 2026)
+\end{rSection}
+
+\begin{rSection}{Languages}
+English (Full Professional Proficiency) $\diamond$ Hindi (Native or Bilingual Proficiency) $\diamond$ Spanish (Limited Working Proficiency)
+\end{rSection}
+
+\end{document}
